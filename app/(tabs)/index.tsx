@@ -6,6 +6,7 @@ import NotchedRectangle from '@/components/NotchedRectangle';
 import SampleWave from '@/components/SampleWave';
 import StripedRectangle from '@/components/StripedRectangle';
 import Timer from '@/components/Timer';
+import ProgressBar from '@/components/ProgressBar';
 
 type Props = {}
 
@@ -18,6 +19,7 @@ const app = (props: Props) => {
             <SampleWave />
           </View>
           <Timer />
+          <ProgressBar />
     </SafeAreaView>
   )
 }
