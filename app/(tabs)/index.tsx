@@ -7,6 +7,8 @@ import SampleWave from '@/components/SampleWave';
 import StripedRectangle from '@/components/StripedRectangle';
 import Timer from '@/components/Timer';
 import ProgressBar from '@/components/ProgressBar';
+import CustomButton from '@/components/Button';
+import HomeIndicator from '@/components/HomeIndicator';
 
 type Props = {}
 
@@ -20,6 +22,15 @@ const app = (props: Props) => {
           </View>
           <Timer />
           <ProgressBar />
+          <View style={{height: '9%', marginTop: '9%'}}>
+            <CustomButton 
+              onPress={() => console.log("Button Pressed")}
+              title="Challenge Yourself"
+              flex={1}
+              variant="primary"
+            />
+          </View>
+          <HomeIndicator />
     </SafeAreaView>
   )
 }
